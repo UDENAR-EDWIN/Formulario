@@ -7,53 +7,70 @@
 </head>
 <body>
   <form action="" method="GET">
-      <table border="1">
+      <table style="text-align: center; margin: auto;" border="1">
         <tr>
           <td colspan="2">FOTOGRAFIA</td>
           <td colspan="2">PROPIETARIO</td>
         </tr>
         <tr>
-          <td colspan="2" rowspan="5">X</td>
-          <td>1</td>
-          <td>2</td>
+          <td colspan="2" rowspan="5">
+            <img src="http://www.ford.com.co/servlet/Satellite?ssbinary=true&blobtable=DFYImage&blobkey=id&blobcol=urlthumbnail&blobheadervalue1=max-age%253D1000&blobwhere=1249184171240&blobheadername1=Cache-Control"width="400"><br>
+            <input type="file" name="txt_file" id="txt_file" value="Buscar">
+          </td>
+          <td>
+            <select id="sl_ced" name="sl_ced">
+              <option value="CD" selected="selected">Cedula</option>
+              <option value="PS">Pasaporte</option>
+              <option value="RC">Registro Civil</option>
+              <option value="OT">Otro</option>
+            </select>
+          </td>
+          <td>
+            <label>Identificación</label><br>
+            <input type="number" name="txt_id" id="txt_id">
+          </td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>4</td>
+          <td>NOMBRES</td>
+          <td>APELLIDOS</td>
         </tr>
         <tr>
-          <td>5</td>
-          <td>6</td>
+          <td><input type="text" name="txt_name" id="txt_name"></td>
+          <td><input type="text" name="txt_sname" id="txt_sname"></td>
         </tr>
         <tr>
-          <td colspan="2"></td>
+          <td colspan="2"><labe>GENERO</labe></td>
         </tr>
         <tr>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <input type="checkbox" name="chk_gm" id="chk_gm"><label>Masculino</label>
+            <input type="checkbox" name="chk_gf" id="chk_gf"><label>Femenino</label>
+            <input type="checkbox" name="chk_go" id="chk_go"><label>Otro</label>
+          </td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <td>FECHA DE LA MATRICULA</td>
+          <td>CHASIS</td>
+          <td>MOTOR</td>
+          <td>COSTO</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <td><input type="date" name="txt_fech" id="txt_fech"></td>
+          <td><input type="number" name="txt_cha" id="txt_cha"></td>
+          <td><input type="number" name="txt_mot" id="txt_mot"></td>
+          <td><input type="number" name="txt_cost" id="txt_cost"></td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <td>PLACA</td>
+          <td>MODELO</td>
+          <td>PUERTAS</td>
+          <td>EJES</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <td><input type="text" name="txt_pla" id="txt_pla"></td>
+          <td><input type="text" name="txt_mod" id="txt_mod"></td>
+          <td><input type="number" name="txt_pts" id="txt_pts"></td>
+          <td><input type="number" name="txt_ejs" id="txt_ejs"></td>
         </tr>
       </table>
   </form>
