@@ -3,76 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulario de Registro</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <form action="" method="GET">
-      <table style="text-align: center; margin: auto;" border="1">
-        <tr>
-          <td colspan="2">FOTOGRAFIA</td>
-          <td colspan="2">PROPIETARIO</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="5">
-            <img src="http://www.ford.com.co/servlet/Satellite?ssbinary=true&blobtable=DFYImage&blobkey=id&blobcol=urlthumbnail&blobheadervalue1=max-age%253D1000&blobwhere=1249184171240&blobheadername1=Cache-Control"width="400"><br>
-            <input type="file" name="txt_file" id="txt_file" value="Buscar">
-          </td>
-          <td>
-            <select id="sl_ced" name="sl_ced">
-              <option value="CD" selected="selected">Cedula</option>
-              <option value="PS">Pasaporte</option>
-              <option value="RC">Registro Civil</option>
-              <option value="OT">Otro</option>
-            </select>
-          </td>
-          <td>
-            <label>Identificación</label><br>
-            <input type="number" name="txt_id" id="txt_id">
-          </td>
-        </tr>
-        <tr>
-          <td>NOMBRES</td>
-          <td>APELLIDOS</td>
-        </tr>
-        <tr>
-          <td><input type="text" name="txt_name" id="txt_name"></td>
-          <td><input type="text" name="txt_sname" id="txt_sname"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><labe>GENERO</labe></td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" name="chk_gm" id="chk_gm"><label>Masculino</label>
-            <input type="checkbox" name="chk_gf" id="chk_gf"><label>Femenino</label>
-            <input type="checkbox" name="chk_go" id="chk_go"><label>Otro</label>
-          </td>
-        </tr>
-        <tr>
-          <td>FECHA DE LA MATRICULA</td>
-          <td>CHASIS</td>
-          <td>MOTOR</td>
-          <td>COSTO</td>
-        </tr>
-        <tr>
-          <td><input type="date" name="txt_fech" id="txt_fech"></td>
-          <td><input type="number" name="txt_cha" id="txt_cha"></td>
-          <td><input type="number" name="txt_mot" id="txt_mot"></td>
-          <td><input type="number" name="txt_cost" id="txt_cost"></td>
-        </tr>
-        <tr>
-          <td>PLACA</td>
-          <td>MODELO</td>
-          <td>PUERTAS</td>
-          <td>EJES</td>
-        </tr>
-        <tr>
-          <td><input type="text" name="txt_pla" id="txt_pla"></td>
-          <td><input type="text" name="txt_mod" id="txt_mod"></td>
-          <td><input type="number" name="txt_pts" id="txt_pts"></td>
-          <td><input type="number" name="txt_ejs" id="txt_ejs"></td>
-        </tr>
-      </table>
+      <div class="target_photos">
+        <header><h3>FOTOGRAFIA PROPIETARIO</h3></header>
+        <figure>
+          <img id="ft_personal" src="http://img.freepik.com/vector-gratis/la-cara-del-vector-rubia_630198.jpg?size=338&ext=jpg">
+        </figure>
+        <button type="button" name="button">BUSCAR</button>
+      </div>
+      <div class="target_info">
+        <header><h3>INFORMACION PROPIETARIO</h3></header>
+        <ul>
+          <li class="three_elm title">TIPO DE IDENTIFICACIÓN</li>
+          <li class="three_elm title">NUMERO DE IDENTIFICACIÓN</li>
+          <li class="three_elm title">GENERO</li>
+        </ul>
+        <ul>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+        </ul>
+        <ul>
+          <li class="two_elm title">NOMBRES</li>
+          <li class="two_elm title">APELLIDOS</li>
+        </ul>
+        <ul>
+          <li class="two_elm area">X</li>
+          <li class="two_elm area">X</li>
+        </ul>
+      </div>
+      <div class="target_photos">
+        <header><h3>FOTOGRAFIA VEHICULO</h3></header>
+        <figure>
+          <img id="ft_vehiculo" src="http://www.ford.com.co/servlet/Satellite?ssbinary=true&blobtable=DFYImage&blobkey=id&blobcol=urlthumbnail&blobheadervalue1=max-age%253D1000&blobwhere=1249193571983&blobheadername1=Cache-Control">
+        </figure>
+        <button type="file" name="button">BUSCAR</button>
+      </div>
+      <div class="target_info">
+        <header><h3>INFORMACION VEHICULO</h3></header>
+        <ul>
+          <li class="three_elm title">FECHA DE LA MATRICULA</li>
+          <li class="three_elm title">CHASIS</li>
+          <li class="three_elm title">MOTOR</li>
+        </ul>
+        <ul>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+        </ul>
+        <ul>
+          <li class="three_elm title">COSTO</li>
+          <li class="three_elm title">PLACA</li>
+          <li class="three_elm title">MODELO</li>
+        </ul>
+        <ul>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+        </ul>
+        <ul>
+          <li class="three_elm title">PUERTAS</li>
+          <li class="three_elm title">EJES</li>
+          <li class="three_elm title">TRANSMISION</li>
+        </ul>
+        <ul>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+          <li class="area three_elm">X</li>
+        </ul>
+      </div>
   </form>
 </body>
 </html>

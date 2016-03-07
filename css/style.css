@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  border: 1px solid #0d122b;
+  display: block;
+  text-align: center;
+}
+
+header {
+  background-color: #0d122b;
+  color: white;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+ul li {
+  background-color: #c85f6f;
+  display: inline-block;
+  border: 1px solid #0f0707;
+  float: left;
+  position: relative;
+  font-size: 100%;
+}
+
+.title {
+  height: 30px;
+}
+
+.three_elm {
+  width: 33.04%;
+}
+
+.two_elm {
+  width: 49.7%;
+}
+
+.area {
+  background-color: white;
+}
+
+.target_photos {
+  width: 400px;
+  margin: 10px 0 2px 9%;
+  padding-bottom: 5px;
+  float: left;
+  border-radius: 5px;
+}
+
+.target_info {
+  width: 700px;
+  margin: 10px 9% 105px 0;
+  float: right;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
+#ft_personal {
+  border: 4px solid #0d122b;
+  border-radius: 100%;
+  width: 40%;
+  height: 40%;
+  margin: 5px;
+}
+
+#ft_vehiculo {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
