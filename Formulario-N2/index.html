@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario CLinica Veterinaria</title>
+</head>
+<body>
+  <form action="" method="GET">
+      <table style="text-align: center; margin: auto;" border="1">
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Sub-Formulario para el Propietario -->
+        <tr>
+          <td colspan="2">FOTOGRAFIA</td>
+          <td colspan="4">PROPIETARIO</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="5">
+            <img style="border-radius: 100%; border: 4px solid black; margin-top: 10px;" src="http://img.freepik.com/vector-gratis/la-cara-del-vector-rubia_630198.jpg?size=338&ext=jpg"width="200"><br><br>
+            <input type="file" name="txt_file" id="txt_file" value="Buscar">
+          </td>
+          <td colspan="2">
+            <select id="sl_ced" name="sl_ced">
+              <option value="CD" selected="selected">Cedula</option>
+              <option value="PS">Pasaporte</option>
+              <option value="RC">Registro Civil</option>
+              <option value="OT">Otro</option>
+            </select>
+          </td>
+          <td colspan="2">
+            <label>Identificación</label><br>
+            <input type="number" name="txt_id" id="txt_id">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">NOMBRES</td>
+          <td colspan="2">APELLIDOS</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="txt_name" id="txt_name"></td>
+          <td colspan="2"><input type="text" name="txt_sname" id="txt_sname"></td>
+        </tr>
+        <tr>
+          <td><pre style="font-family: georgia">          GENERO          </pre></td>
+          <td>DIRECCIÓN</td>
+          <td>CELULAR</td>
+          <td>EMAIL</td>
+        </tr>
+        <tr>
+          <td>
+            <ul style="list-style: none; margin: 0; padding: 0; float: center;">
+              <li><input type="checkbox" name="chk_gm" id="chk_gm"><label>Masculino</label></li>
+              <li style="margin-left: -5px;"><input type="checkbox" name="chk_gf" id="chk_gf"><label>Femenino</label></li>
+              <li style="margin-left: -35px;"><input type="checkbox" name="chk_go" id="chk_go"><label>Otro</label></li>
+            </ul>
+          </td>
+          <td><input type="text" name="txt_dir" id="txt_dir"></td>
+          <td><input type="number" name="txt_cel" id="txt_cel"></td>
+          <td><input type="email" name="txt_email" id="txt_email"></td>
+        </tr>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Sub-Formulario para la Mascota -->
+        <tr>
+          <td colspan="2">FOTOGRAFIA</td>
+          <td colspan="4">MASCOTA</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7">
+            <img style="border-radius: 100%; border: 4px solid black; margin-top: 10px;" src="https://image.freepik.com/vector-gratis/vector-cabeza-de-lobo_23-2147495369.jpg"width="200"><br><br>
+            <input type="file" name="txt_file" id="txt_file" value="Buscar">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">NOMBRE</td>
+          <td colspan="2">RAZA</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="txt_mas" id="txt_mas"></td>
+          <td colspan="2"><input type="text" name="txt_raz" id="txt_raz"></td>
+        </tr>
+        <tr>
+          <td colspan="2">CLINICA VETERINARIA</td>
+          <td>SEXO</td>
+          <td>ESPECIE</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="txt_clv" id="txt_clv"></td>
+          <td>
+            <select id="sl_sex" name="sl_sex">
+              <option value="M" selected="selected">Macho</option>
+              <option value="H">Hembra</option>
+              <option value="MC">Macho Castrado</option>
+              <option value="HC">Hembra Castrada</option>
+            </select>
+          </td>
+          <td>
+            <select id="sl_esp" name="sl_esp">
+              <option value="C" selected="selected">Canino</option>
+              <option value="F">Felino</option>
+              <option value="E">Exotico</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">FECHA DE NACIMIENTO</td>
+          <td colspan="2">COLOR</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="date" name="txt_nacm" id="txt_nacm"></td>
+          <td colspan="2"><input type="color" name="txt_col" id="txt_col"></td>
+        </tr>
+      </table>
+  </form>
+</body>
+</html>
