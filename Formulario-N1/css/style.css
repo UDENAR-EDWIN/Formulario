@@ -16,7 +16,7 @@ header {
   border-top-left-radius: 4px;
 }
 
-ul li {
+ul>li {
   background-color: #c85f6f;
   display: inline-block;
   border: 1px solid #0f0707;
@@ -25,16 +25,21 @@ ul li {
   font-size: 100%;
 }
 
-.title {
-  height: 30px;
-}
-
 .three_elm {
   width: 33.04%;
+  height: 60px;
+  padding-top: 30px;
 }
 
 .two_elm {
   width: 49.7%;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.title {
+  height: 30px;
+  padding: 5px 0 0 0;
 }
 
 .area {
@@ -43,6 +48,7 @@ ul li {
 
 .target_photos {
   width: 400px;
+  height: 285px;
   margin: 10px 0 2px 9%;
   padding-bottom: 5px;
   float: left;
@@ -51,7 +57,7 @@ ul li {
 
 .target_info {
   width: 700px;
-  margin: 10px 9% 105px 0;
+  margin: 10px 9% 2px 0;
   float: right;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -70,4 +76,20 @@ ul li {
   width: 100%;
   height: 100%;
   margin: 5px;
+}
+
+#checkstyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -15px;
+  float: center;
+}
+
+#checkstyle>li:nth-child(2){margin-left: -5px;}
+#checkstyle>li:last-child{margin-left: -35px;}
+
+#car>ul>li {
+  height: 20px;
+  padding: 11.3px 0;
 }

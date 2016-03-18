@@ -22,17 +22,42 @@
           <li class="three_elm title">GENERO</li>
         </ul>
         <ul>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
+          <li class="area three_elm">
+            <select id="sl_ced" name="sl_ced">
+              <option value="CD" selected="selected">Cedula</option>
+              <option value="PS">Pasaporte</option>
+              <option value="RC">Registro Civil</option>
+              <option value="OT">Otro</option>
+            </select>
+          </li>
+          <li class="area three_elm">
+            <input type="number" name="txt_id" id="txt_id">
+          </li>
+          <li class="area three_elm">
+            <ol id="checkstyle">
+              <li><input type="checkbox" name="chk_gm" id="chk_gm"><label>Masculino</label></li>
+              <li><input type="checkbox" name="chk_gf" id="chk_gf"><label>Femenino</label></li>
+              <li><input type="checkbox" name="chk_go" id="chk_go"><label>Otro</label></li>
+            </ol>
+          </li>
         </ul>
         <ul>
           <li class="two_elm title">NOMBRES</li>
           <li class="two_elm title">APELLIDOS</li>
         </ul>
         <ul>
-          <li class="two_elm area">X</li>
-          <li class="two_elm area">X</li>
+          <li class="two_elm area">
+            <label>Primer Nombre: </label>
+            <input type="text" name="txt_fname" id="txt_fname"><br><br>
+            <label>Segundo Nombre: </label>
+            <input type="text" name="txt_lname" id="txt_lname">
+          </li>
+          <li class="two_elm area">
+            <label>Primer Apellido: </label>
+            <input type="text" name="txt_fsname" id="txt_fsname"><br><br>
+            <label>Segundo Apellido: </label>
+            <input type="text" name="txt_lsname" id="txt_lsname">
+          </li>
         </ul>
       </div>
       <div class="target_photos">
@@ -42,7 +67,7 @@
         </figure>
         <button type="file" name="button">BUSCAR</button>
       </div>
-      <div class="target_info">
+      <div class="target_info" id="car">
         <header><h3>INFORMACION VEHICULO</h3></header>
         <ul>
           <li class="three_elm title">FECHA DE LA MATRICULA</li>
@@ -50,9 +75,9 @@
           <li class="three_elm title">MOTOR</li>
         </ul>
         <ul>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
+          <li class="area three_elm"><input type="date" name="txt_fech" id="txt_fech"></li>
+          <li class="area three_elm"><input type="number" name="txt_cha" id="txt_cha"></li>
+          <li class="area three_elm"><input type="number" name="txt_mot" id="txt_mot"></li>
         </ul>
         <ul>
           <li class="three_elm title">COSTO</li>
@@ -60,9 +85,9 @@
           <li class="three_elm title">MODELO</li>
         </ul>
         <ul>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
+          <li class="area three_elm"><input type="number" name="txt_cost" id="txt_cost"></li>
+          <li class="area three_elm"><input type="text" name="txt_pla" id="txt_pla"></li>
+          <li class="area three_elm"><input type="text" name="txt_mod" id="txt_mod"></li>
         </ul>
         <ul>
           <li class="three_elm title">PUERTAS</li>
@@ -70,9 +95,9 @@
           <li class="three_elm title">TRANSMISION</li>
         </ul>
         <ul>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
-          <li class="area three_elm">X</li>
+          <li class="area three_elm"><input type="number" name="txt_pts" id="txt_pts"></li>
+          <li class="area three_elm"><input type="number" name="txt_ejs" id="txt_ejs"></li>
+          <li class="area three_elm"><input type="text" name="txt_trans" id="txt_trans"></li>
         </ul>
       </div>
   </form>
